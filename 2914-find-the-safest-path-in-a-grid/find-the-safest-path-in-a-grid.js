@@ -6,7 +6,7 @@ var maximumSafenessFactor = function(grid) {
     const n = grid.length;
     const dirs = [[1,0],[-1,0],[0,1],[0,-1]];
 
-    // Step 1: Distance from nearest thief
+    // Distance from nearest thief
     const dist = Array.from({length:n}, () => Array(n).fill(-1));
     const q = [];
     let head = 0;
